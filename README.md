@@ -63,61 +63,90 @@ License-Plate-Recognition/
 ```bash
 git clone https://github.com/Abhi757575/License-Plate-Recognition.git
 cd License-Plate-Recognition
+```
 
-
-2. Install dependencies
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-3. Install additional tools
+```
+
+### 3. Install additional tools
+```bash
 pip install ultralytics easyocr filterpy
-▶️ Usage
-Run the pipeline
+```
+
+---
+
+## ▶️ Usage
+
+### Run the pipeline
+```bash
 python src/main.py
-Input
-Video file (.mp4)
-Frame stream
-Output
+```
+
+### Input
+- Video file (`.mp4`)
+- Frame stream
+
+### Output
 Annotated video with:
-Bounding boxes (vehicles + plates)
-Tracking IDs
-Extracted license plate text
-🧠 Pipeline Workflow
+- Bounding boxes (vehicles + plates)
+- Tracking IDs
+- Extracted license plate text
+
+---
+
+## 🧠 Pipeline Workflow
+
 Video → Frame Extraction
-      → YOLOv8 Vehicle Detection
-      → License Plate Detection
-      → SORT Tracking
-      → Plate Cropping
-      → OCR (EasyOCR)
-      → Text Normalization
-      → Output Rendering
-⚠️ Notes
-Large files like:
-.mp4 videos
-.pt models
-are not included in this repo due to GitHub size limits.
+→ YOLOv8 Vehicle Detection
+→ License Plate Detection
+→ SORT Tracking
+→ Plate Cropping
+→ OCR (EasyOCR)
+→ Text Normalization
+→ Output Rendering
+
+---
+
+## ⚠️ Notes
+
+Large files like `.mp4` videos and `.pt` models are **not included** in this repo due to GitHub size limits.
 
 👉 Add your own:
+- `yolov8n.pt`
+- `license_plate_detector.pt`
+- Input videos
 
-yolov8n.pt
-license_plate_detector.pt
-Input videos
-📊 Future Improvements
-✅ Improve OCR accuracy with custom training
-✅ Add real-time webcam support
-✅ Deploy as web app (Flask / FastAPI)
-✅ Use DeepSORT for better tracking
-✅ Integrate database for plate logging
-🤝 Contributing
+---
+
+## 📊 Future Improvements
+
+- ✅ Improve OCR accuracy with custom training
+- ✅ Add real-time webcam support
+- ✅ Deploy as web app (Flask / FastAPI)
+- ✅ Use DeepSORT for better tracking
+- ✅ Integrate database for plate logging
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+- Open issues
+- Submit pull requests
+- Suggest improvements
 
-Open issues
-Submit pull requests
-Suggest improvements
-📜 License
+---
+
+## 📜 License
 
 This project is for educational and research purposes.
 
-🙌 Acknowledgements
-YOLOv8 by Ultralytics
-SORT Tracking Algorithm
-EasyOCR
+---
+
+## 🙌 Acknowledgements
+
+- [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
+- [SORT Tracking Algorithm](https://github.com/abewley/sort)
+- [EasyOCR](https://github.com/JaidedAI/EasyOCR)
