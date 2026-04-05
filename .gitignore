@@ -8,3 +8,4 @@ yolov8n.pt
 *.mp4
 *.avi
 *.mov
+models/
