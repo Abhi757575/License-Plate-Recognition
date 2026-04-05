@@ -1,0 +1,6 @@
+__pycache__/
+lpr_env/
+*.log
+*.pth
+*.pt
+yolov8n.pt
