@@ -3,4 +3,8 @@ lpr_env/
 *.log
 *.pth
 *.pt
+sample.mp4
 yolov8n.pt
+*.mp4
+*.avi
+*.mov
